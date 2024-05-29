@@ -13,6 +13,7 @@ coverage
 
 ./tsconfig.tsbuildinfo
 yarn.lock
+pnpm-lock.yaml
 medusa-db.sql
 build
 .cache

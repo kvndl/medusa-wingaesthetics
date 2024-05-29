@@ -134,7 +134,8 @@ const projectConfig = {
   store_cors: STORE_CORS,
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
-  database_extra: { ssl: { rejectUnauthorized: false } }
+  database_extra: { ssl: { rejectUnauthorized: false } },
+  worker_mode: process.env.MEDUSA_WORKER_MODE
   // redis_url: REDIS_URL
 };
 
