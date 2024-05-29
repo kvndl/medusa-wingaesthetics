@@ -38,7 +38,7 @@ const DATABASE_URL =
   `postgres://${DB_USERNAME}:${DB_PASSWORD}` +
   `@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`
 
-const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
+// const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
 const plugins = [
   // {
