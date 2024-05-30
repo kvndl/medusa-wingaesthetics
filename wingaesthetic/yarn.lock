@@ -14858,51 +14858,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"medusa-starter-default@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "medusa-starter-default@workspace:."
-  dependencies:
-    "@babel/cli": "npm:^7.14.3"
-    "@babel/core": "npm:^7.14.3"
-    "@babel/preset-typescript": "npm:^7.21.4"
-    "@medusajs/admin": "npm:^7.1.14"
-    "@medusajs/cache-inmemory": "npm:latest"
-    "@medusajs/cache-redis": "npm:^1.9.1"
-    "@medusajs/event-bus-local": "npm:latest"
-    "@medusajs/event-bus-redis": "npm:^1.8.13"
-    "@medusajs/file-local": "npm:latest"
-    "@medusajs/medusa": "npm:^1.20.6"
-    "@medusajs/medusa-cli": "npm:latest"
-    "@stdlib/number-float64-base-normalize": "npm:0.0.8"
-    "@tanstack/react-query": "npm:4.22.0"
-    "@types/express": "npm:^4.17.13"
-    "@types/jest": "npm:^27.4.0"
-    "@types/mime": "npm:1.3.5"
-    "@types/node": "npm:^17.0.8"
-    babel-preset-medusa-package: "npm:^1.1.19"
-    body-parser: "npm:^1.19.0"
-    cors: "npm:^2.8.5"
-    cross-env: "npm:^7.0.3"
-    dotenv: "npm:16.3.1"
-    eslint: "npm:^6.8.0"
-    express: "npm:^4.17.2"
-    jest: "npm:^27.3.1"
-    medusa-file-s3: "npm:^1.4.1"
-    medusa-fulfillment-manual: "npm:latest"
-    medusa-fulfillment-webshipper: "npm:^1.4.2"
-    medusa-interfaces: "npm:latest"
-    medusa-payment-manual: "npm:latest"
-    medusa-payment-stripe: "npm:latest"
-    medusa-plugin-mailchimp: "npm:^1.1.50"
-    prism-react-renderer: "npm:^2.0.4"
-    rimraf: "npm:^3.0.2"
-    ts-jest: "npm:^27.0.7"
-    ts-loader: "npm:^9.2.6"
-    typeorm: "npm:^0.3.16"
-    typescript: "npm:^4.5.2"
-  languageName: unknown
-  linkType: soft
-
 "medusa-telemetry@npm:^0.0.17":
   version: 0.0.17
   resolution: "medusa-telemetry@npm:0.0.17"
@@ -14954,6 +14909,51 @@ __metadata:
   checksum: 10c0/e729c49746dd6fa87f74d25f0d8388bd3f820bb610334d40ee18a7b4c9f942f57a9cb85f8011f766612f23990a876b53e1e5aca72f527d2786798daf6e073fa4
   languageName: node
   linkType: hard
+
+"medusa-wingaesthetics@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "medusa-wingaesthetics@workspace:."
+  dependencies:
+    "@babel/cli": "npm:^7.14.3"
+    "@babel/core": "npm:^7.14.3"
+    "@babel/preset-typescript": "npm:^7.21.4"
+    "@medusajs/admin": "npm:^7.1.14"
+    "@medusajs/cache-inmemory": "npm:latest"
+    "@medusajs/cache-redis": "npm:^1.9.1"
+    "@medusajs/event-bus-local": "npm:latest"
+    "@medusajs/event-bus-redis": "npm:^1.8.13"
+    "@medusajs/file-local": "npm:latest"
+    "@medusajs/medusa": "npm:^1.20.6"
+    "@medusajs/medusa-cli": "npm:latest"
+    "@stdlib/number-float64-base-normalize": "npm:0.0.8"
+    "@tanstack/react-query": "npm:4.22.0"
+    "@types/express": "npm:^4.17.13"
+    "@types/jest": "npm:^27.4.0"
+    "@types/mime": "npm:1.3.5"
+    "@types/node": "npm:^17.0.8"
+    babel-preset-medusa-package: "npm:^1.1.19"
+    body-parser: "npm:^1.19.0"
+    cors: "npm:^2.8.5"
+    cross-env: "npm:^7.0.3"
+    dotenv: "npm:16.3.1"
+    eslint: "npm:^6.8.0"
+    express: "npm:^4.17.2"
+    jest: "npm:^27.3.1"
+    medusa-file-s3: "npm:^1.4.1"
+    medusa-fulfillment-manual: "npm:latest"
+    medusa-fulfillment-webshipper: "npm:^1.4.2"
+    medusa-interfaces: "npm:latest"
+    medusa-payment-manual: "npm:latest"
+    medusa-payment-stripe: "npm:latest"
+    medusa-plugin-mailchimp: "npm:^1.1.50"
+    prism-react-renderer: "npm:^2.0.4"
+    rimraf: "npm:^3.0.2"
+    ts-jest: "npm:^27.0.7"
+    ts-loader: "npm:^9.2.6"
+    typeorm: "npm:^0.3.16"
+    typescript: "npm:^4.5.2"
+  languageName: unknown
+  linkType: soft
 
 "memfs@npm:^3.1.2, memfs@npm:^3.4.3":
   version: 3.5.3
