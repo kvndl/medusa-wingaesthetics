@@ -2,7 +2,7 @@
 builder = "NIXPACKS"
 
 [build.nixpacksPlan.phases.setup]
-nixPkgs = ["nodejs", "yarn"]
+nixPkgs = ["nodejs"]
 
 [build.nixpacksPlan.phases.install]
-cmds=["yarn install"]
+cmds=["corepack enable && yarn install"]

@@ -4,6 +4,9 @@
   "description": "A starter for Medusa projects.",
   "author": "Medusa (https://medusajs.com)",
   "license": "MIT",
+  "engine": {
+    "node": 20
+  },
   "keywords": [
     "sqlite",
     "postgres",
@@ -91,5 +94,6 @@
     ],
     "coverageDirectory": "./coverage",
     "testEnvironment": "node"
-  }
+  },
+  "packageManager": "yarn@4.2.2"
 }
