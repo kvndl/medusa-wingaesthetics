@@ -2,7 +2,7 @@
 builder = "NIXPACKS"
 
 [build.nixpacksPlan.phases.setup]
-nixPkgs = ["nodejs_20", "yarn-berry"]
+nixPkgs = ["nodejs_20", "yarn"]
 
 [build.nixpacksPlan.phases.install]
 cmds=["yarn install"]
