@@ -15,7 +15,7 @@ const nextConfig = withStoreConfig({
       },
       {
         protocol: "https",
-        hostname: "s3.us-west-002.backblazeb2.com",
+        hostname: "wingaesthetic.s3.us-east-1.amazonaws.com",
       },
     ],
   },
