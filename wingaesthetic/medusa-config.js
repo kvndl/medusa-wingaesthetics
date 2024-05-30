@@ -19,7 +19,7 @@ switch (process.env.NODE_ENV) {
 
 try {
   dotenv.config({ path: process.cwd() + "/" + ENV_FILE_NAME });
-} catch (e) {}
+} catch (e) { }
 
 // CORS when consuming Medusa from admin
 const ADMIN_CORS =
@@ -52,6 +52,55 @@ const plugins = [
       },
     },
   },
+  {
+    resolve: `medusa-payment-stripe`,
+    options: {
+      api_key: process.env.STRIPE_API_KEY,
+      webhook_secret: process.env.STRIPE_WEBHOOK_SECRET,
+    },
+  },
+  {
+    resolve: `medusa-file-s3`,
+    options: {
+      s3_url: process.env.S3_URL,
+      bucket: process.env.S3_BUCKET,
+      access_key_id: process.env.S3_ACCESS_KEY_ID,
+      secret_access_key: process.env.S3_SECRET_ACCESS_KEY,
+    },
+  },
+  // {
+  //   resolve: `medusa-fulfillment-webshipper`,
+  //   options: {
+  //     account: process.env.WEBSHIPPER_ACCOUNT,
+  //     api_token: process.env.WEBSHIPPER_API_TOKEN,
+  //     order_channel_id:
+  //     process.env.WEBSHIPPER_ORDER_CHANNEL_ID,
+  //     webhook_secret: process.env.WEBSHIPPER_WEBHOOK_SECRET,
+  //     return_address: {
+  //       // Webshipper Shipping Address fields
+  //     },
+  //     // optional
+  //     coo_countries: process.env.WEBSHIPPER_COO_COUNTRIES,
+  //     delete_on_cancel:
+  //     process.env.WEBSHIPPER_DELETE_ON_CANCEL !== "false",
+  //     document_size: process.env.WEBSHIPPER_DOCUMENT_SIZE,
+  //     return_portal: {
+  //       id: process.env.WEBSHIPPER_RETURN_PORTAL_ID,
+  //       cause_id:
+  //       process.env.WEBSHIPPER_RETURN_PORTAL_CAUSE_ID,
+  //       refund_method_id:
+  //       process.env.WEBSHIPPER_RETURN_REFUND_METHOD_ID,
+  //     },
+  //   },
+  // },
+  // {
+  //   resolve: `medusa-plugin-mailchimp`,
+  //   options: {
+  //     api_key: process.env.MAILCHIMP_API_KEY,
+  //     newsletter_list_id:
+  //     process.env.MAILCHIMP_NEWSLETTER_LIST_ID,
+  //   },
+  // },
 ];
 
 const modules = {
