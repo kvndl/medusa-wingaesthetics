@@ -23,6 +23,7 @@
     "@headlessui/react": "^1.6.1",
     "@hookform/error-message": "^2.0.0",
     "@medusajs/link-modules": "^0.2.3",
+    "@medusajs/medusa-js": "^6.1.7",
     "@medusajs/modules-sdk": "^1.12.3",
     "@medusajs/pricing": "^0.1.4",
     "@medusajs/product": "^0.3.4",
@@ -30,8 +31,8 @@
     "@meilisearch/instant-meilisearch": "^0.7.1",
     "@paypal/paypal-js": "^5.0.6",
     "@paypal/react-paypal-js": "^7.8.1",
-    "@stripe/react-stripe-js": "^2.7.1",
-    "@stripe/stripe-js": "^3.4.1",
+    "@stripe/react-stripe-js": "^1.7.2",
+    "@stripe/stripe-js": "^1.29.0",
     "algoliasearch": "^4.20.0",
     "axios": "^1.6.7",
     "lodash": "^4.17.21",
@@ -66,5 +67,6 @@
     "prettier": "^2.8.8",
     "tailwindcss": "^3.0.23",
     "typescript": "^5.3.2"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
