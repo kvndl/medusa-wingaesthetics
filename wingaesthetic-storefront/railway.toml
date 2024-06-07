@@ -1,0 +1,8 @@
+[environments.production.build]
+builder = "NIXPACKS"
+watchPatterns = ["wingaesthetic-storefront/**"]
+buildCommand = "yarn build"
+
+[environments.production.deploy]
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
