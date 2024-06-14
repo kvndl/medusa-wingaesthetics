@@ -1288,7 +1288,7 @@
     "@babel/helper-function-name" "^7.24.6"
     "@babel/helper-plugin-utils" "^7.24.6"
 
-"@babel/plugin-transform-instanceof@^7.12.1", "@babel/plugin-transform-instanceof@^7.8.3":
+"@babel/plugin-transform-instanceof@^7.12.1":
   version "7.24.6"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-instanceof/-/plugin-transform-instanceof-7.24.6.tgz#d26b4a8a6e142c68d745c36defaf11fbc361067a"
   integrity sha512-+FvtU9FHjfXLdaQBc3W1vXLum5heVsaMh33vGybKFeHF/rEil3T0NYstNdCL3uPQkeejvOEmqqyrcNhrFs8xdA==
@@ -1726,7 +1726,7 @@
   resolved "https://registry.yarnpkg.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@^7.12.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.7", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.6", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.10", "@babel/runtime@^7.23.2", "@babel/runtime@^7.24.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.12.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.7", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.6", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.10", "@babel/runtime@^7.23.2", "@babel/runtime@^7.24.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.24.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.6.tgz#5b76eb89ad45e2e4a0a8db54c456251469a3358e"
   integrity sha512-Ja18XcETdEl5mzzACGd+DKgaGJzPTCow7EglgwTmHdwokzDFYh/MHua6lU6DV/hjF2IaOJ4oX2nqnjG7RElKOw==
@@ -2948,7 +2948,7 @@
     winston "^3.8.2"
     zod "^3.22.4"
 
-"@medusajs/modules-sdk@^1.12.11", "@medusajs/modules-sdk@^1.12.3", "@medusajs/modules-sdk@^1.12.8":
+"@medusajs/modules-sdk@^1.12.11", "@medusajs/modules-sdk@^1.12.3", "@medusajs/modules-sdk@^1.12.8", "@medusajs/modules-sdk@^1.8.8":
   version "1.12.11"
   resolved "https://registry.yarnpkg.com/@medusajs/modules-sdk/-/modules-sdk-1.12.11.tgz#9de7aae05fc7565f5131f80af4c3b9c301570854"
   integrity sha512-JDZ0BP1CD69cAqYQb/PHC2pZKhhzeM6krttt6/8pi9/h7HvpUvkMQ2gaL1ze8NTu5K66BjRu9MpRrzBFQzOrdg==
@@ -3022,7 +3022,7 @@
     sonner "^1.4.41"
     tailwind-merge "^2.2.1"
 
-"@medusajs/utils@^1.11.2", "@medusajs/utils@^1.11.5", "@medusajs/utils@^1.11.8", "@medusajs/utils@^1.11.9":
+"@medusajs/utils@^1.11.2", "@medusajs/utils@^1.11.5", "@medusajs/utils@^1.11.8", "@medusajs/utils@^1.11.9", "@medusajs/utils@^1.9.4":
   version "1.11.9"
   resolved "https://registry.yarnpkg.com/@medusajs/utils/-/utils-1.11.9.tgz#f6862f534b66274589ab2775fff17b92838d7d92"
   integrity sha512-L9tKoan2aiCO+o3gJMvZyCMLX9Xj778V1O8dOpiEUTGMvOLC8pCGW+CgKpBf7Zq6qa2GKz1Xj3DA9pCluJIETA==
@@ -7530,6 +7530,13 @@ cross-fetch@4.0.0:
   dependencies:
     node-fetch "^2.6.12"
 
+cross-fetch@^3.1.6:
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.8.tgz#0327eba65fd68a7d119f8fb2bf9334a1a7956f82"
+  integrity sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg==
+  dependencies:
+    node-fetch "^2.6.12"
+
 cross-inspect@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cross-inspect/-/cross-inspect-1.0.0.tgz#5fda1af759a148594d2d58394a9e21364f6849af"
@@ -10560,7 +10567,7 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
-medusa-core-utils@1.2.2, medusa-core-utils@^1.1.31, medusa-core-utils@^1.2.0, medusa-core-utils@^1.2.1, medusa-core-utils@^1.2.2:
+medusa-core-utils@1.2.2, medusa-core-utils@^1.1.31, medusa-core-utils@^1.2.0, medusa-core-utils@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/medusa-core-utils/-/medusa-core-utils-1.2.2.tgz#7f1cc6980d13a14d69ed69122588b73c6a3ca097"
   integrity sha512-2M7bzZeEPovDZigofn5ihGhxUP4XKiovGxvEEYpfmoQAeg+kL2Vd42lIJyKRsLOKjKXqz99mmRpyUT+6gSKCCA==
@@ -10580,17 +10587,6 @@ medusa-file-s3@^1.4.1:
     medusa-core-utils "^1.2.0"
     medusa-test-utils "^1.1.40"
 
-medusa-fulfillment-manual@^1.1.40:
-  version "1.1.40"
-  resolved "https://registry.yarnpkg.com/medusa-fulfillment-manual/-/medusa-fulfillment-manual-1.1.40.tgz#0d98d4af62d826e50f749d8add20048977c9f26a"
-  integrity sha512-HRz2+ZAE8lYMgFs17EVkQrXYuOWTSmR1qZa++XqDx2DJrv6NWtBKYf49AmdB3VkFdeuHRz7Xl+7114bStNlM4Q==
-  dependencies:
-    "@babel/plugin-transform-classes" "^7.9.5"
-    "@babel/plugin-transform-instanceof" "^7.8.3"
-    "@babel/runtime" "^7.7.6"
-    express "^4.17.1"
-    medusa-core-utils "^1.2.1"
-
 medusa-fulfillment-shippo@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/medusa-fulfillment-shippo/-/medusa-fulfillment-shippo-1.1.2.tgz#9d1ef586b122e04339247334b7fd71f251c53315"
@@ -10608,12 +10604,7 @@ medusa-interfaces@latest:
   resolved "https://registry.yarnpkg.com/medusa-interfaces/-/medusa-interfaces-1.3.9.tgz#4064a99dd3a50d50ac8a3a7f7e9217c2ba6f2a4a"
   integrity sha512-5cTYPvnL96djEdQjO5Mp4ECLJH6FTL1NWQf6kdxbda3S66JkbliNydQ03KorKEPKxT6Fsr74su494rm077EiFw==
 
-medusa-payment-manual@^1.0.24:
-  version "1.0.24"
-  resolved "https://registry.yarnpkg.com/medusa-payment-manual/-/medusa-payment-manual-1.0.24.tgz#4836998d51e4b2be4d0ba7acf3016b35c0f85437"
-  integrity sha512-VcQJuuE86J+ePPmZPVp0961Gkjfvu9v/xII9jM5uOH2CsuMsLI3G8QOjDBxn+kiy+hiQFXD1ZoWDDuuFY/Wt8A==
-
-medusa-payment-stripe@latest:
+medusa-payment-stripe@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/medusa-payment-stripe/-/medusa-payment-stripe-6.0.9.tgz#d8e2a5454aae70eb7258cfaee5833d49b0d1a711"
   integrity sha512-HovJnrKZHFM+n+TaT9fNchwwYf1Mqt9XMeel3XUtUUvO62t8h/slaxSr7nPB4apQ3IEuDHy1cjI0maJb1Ongzw==
@@ -10622,6 +10613,17 @@ medusa-payment-stripe@latest:
     body-parser "^1.19.0"
     express "^4.17.1"
     stripe "^11.10.0"
+
+medusa-plugin-meilisearch@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/medusa-plugin-meilisearch/-/medusa-plugin-meilisearch-2.0.10.tgz#647839dcaeb4d876771fda682ba0e3209616d0c9"
+  integrity sha512-uO1L8jCqmPeF+eTzYiqmauD5SfUWoao7lbvl4L/R+XyW9LhZR0kcLSFyOXtwKQ6SHvLrRQRxRHi4DMoHVpnHeA==
+  dependencies:
+    "@medusajs/modules-sdk" "^1.8.8"
+    "@medusajs/utils" "^1.9.4"
+    body-parser "^1.19.0"
+    lodash "^4.17.21"
+    meilisearch "^0.32.3"
 
 medusa-plugin-sendgrid@^1.3.12:
   version "1.3.12"
@@ -10667,6 +10669,13 @@ medusa-test-utils@^1.1.40:
     "@mikro-orm/postgresql" "5.9.7"
     medusa-core-utils "^1.2.2"
     randomatic "^3.1.1"
+
+meilisearch@^0.32.3:
+  version "0.32.5"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.32.5.tgz#811e7df8586910a3b5dc3356c7ed669442dbe51e"
+  integrity sha512-pVccjGAGP1IDSLg3lx9VhyQjUo7kN8x/HVjSurtb8U24V5/pALpf5H2hj6f60QhJd0Ea4tnGRv8fGr2YqWMo9A==
+  dependencies:
+    cross-fetch "^3.1.6"
 
 memfs@^3.1.2, memfs@^3.4.3:
   version "3.6.0"

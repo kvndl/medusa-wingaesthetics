@@ -34,8 +34,6 @@ const DATABASE_URL =
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
 const plugins = [
-  `medusa-fulfillment-manual`,
-  `medusa-payment-manual`,
   {
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
@@ -50,7 +48,7 @@ const plugins = [
     resolve: `medusa-payment-stripe`,
     options: {
       api_key: process.env.STRIPE_API_KEY,
-      webhook_secret: process.env.STRIPE_WEBHOOK_SECRET,
+      // webhook_secret: process.env.STRIPE_WEBHOOK_SECRET,
     },
   },
   {
@@ -69,8 +67,8 @@ const plugins = [
       api_key: process.env.SHIPPO_API_KEY,
       weight_unit_type: 'lb',
       dimension_unit_type: 'in',
-      webhook_secret: '', // README section on webhooks before using!
-      webhook_test_mode: false
+      // webhook_secret: '', // README section on webhooks before using!
+      // webhook_test_mode: true
     },
   },
   {
@@ -80,13 +78,37 @@ const plugins = [
       from: process.env.SENDGRID_FROM,
       // order_placed_template:
       //   process.env.SENDGRID_ORDER_PLACED_ID,
-      // localization: {
-      //   "de-DE": { // locale key
-      //     order_placed_template:
-      //       process.env.SENDGRID_ORDER_PLACED_ID_LOCALIZED,
-      //   },
+    }
+  },
+  {
+    resolve: `medusa-plugin-meilisearch`,
+    options: {
+      config: {
+        host: process.env.MEILISEARCH_HOST,
+        apiKey: process.env.MEILISEARCH_API_KEY,
+      },
+      settings: {
+        products: {
+          indexSettings: {
+            searchableAttributes: [
+              "title", 
+              "description",
+              "variant_sku",
+            ],
+            displayedAttributes: [
+              "id", 
+              "title", 
+              "description", 
+              "variant_sku", 
+              "thumbnail", 
+              "handle",
+            ],
+          },
+          primaryKey: "id",
+        },
+      },
     },
-  }
+  },
 ];
 
 const modules = {
