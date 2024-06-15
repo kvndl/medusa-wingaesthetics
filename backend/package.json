@@ -1,12 +1,9 @@
 {
-  "name": "medusa-wingaesthetics",
+  "name": "medusa-starter-default",
   "version": "0.0.1",
   "description": "A starter for Medusa projects.",
   "author": "Medusa (https://medusajs.com)",
   "license": "MIT",
-  "engine": {
-    "node": 20
-  },
   "keywords": [
     "sqlite",
     "postgres",
@@ -35,15 +32,16 @@
     "@medusajs/event-bus-redis": "^1.8.13",
     "@medusajs/file-local": "latest",
     "@medusajs/medusa": "^1.20.6",
-    "@swc/core": "1.5.7",
     "@tanstack/react-query": "4.22.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "16.3.1",
     "express": "^4.17.2",
     "medusa-file-s3": "^1.4.1",
+    "medusa-fulfillment-manual": "latest",
     "medusa-fulfillment-shippo": "^1.1.2",
     "medusa-interfaces": "latest",
+    "medusa-payment-manual": "latest",
     "medusa-payment-stripe": "^6.0.9",
     "medusa-plugin-meilisearch": "^2.0.10",
     "medusa-plugin-sendgrid": "^1.3.12",
@@ -94,6 +92,5 @@
     ],
     "coverageDirectory": "./coverage",
     "testEnvironment": "node"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  }
 }

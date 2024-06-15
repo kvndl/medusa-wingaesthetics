@@ -1,9 +1,9 @@
 [environments.production.build]
 builder = "NIXPACKS"
-watchPatterns = ["wingaesthetic/**"]
+watchPatterns = ["backend/**"]
 
 [environments.production.build.nixpacksPlan.phases.setup]
-nixPkgs = ["nodejs_20", "yarn"]
+nixPkgs = ["nodejs_20", "npm"]
 
 [environments.production.build.nixpacksPlan.phases.install]
 cmds=["yarn install"]
