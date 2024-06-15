@@ -38,7 +38,7 @@
     "dotenv": "16.3.1",
     "express": "^4.17.2",
     "medusa-file-s3": "^1.4.1",
-    "medusa-fulfillment-manual": "latest",
+    "medusa-fulfillment-manual": "^1.1.40",
     "medusa-fulfillment-shippo": "^1.1.2",
     "medusa-interfaces": "latest",
     "medusa-payment-manual": "latest",

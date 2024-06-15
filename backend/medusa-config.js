@@ -35,6 +35,9 @@ const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
 const plugins = [
   {
+    resolve: `medusa-fulfillment-manual`,
+  },
+  {
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
@@ -67,8 +70,8 @@ const plugins = [
       api_key: process.env.SHIPPO_API_KEY,
       weight_unit_type: 'lb',
       dimension_unit_type: 'in',
-      // webhook_secret: '', // README section on webhooks before using!
-      // webhook_test_mode: true
+      webhook_secret: process.env.SHIPPO_WEBHOOK_SECRET,
+      webhook_test_mode: false
     },
   },
   {
@@ -76,8 +79,8 @@ const plugins = [
     options: {
       api_key: process.env.SENDGRID_API_KEY,
       from: process.env.SENDGRID_FROM,
-      // order_placed_template:
-      //   process.env.SENDGRID_ORDER_PLACED_ID,
+      order_placed_template:
+        process.env.SENDGRID_ORDER_PLACED_ID,
     }
   },
   {
