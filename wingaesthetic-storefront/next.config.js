@@ -19,6 +19,15 @@ const nextConfig = withStoreConfig({
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/us',
+        destination: '/us/store',
+        permanent: true,
+      },
+    ]
+  },
 })
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))

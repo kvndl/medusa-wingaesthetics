@@ -1,6 +1,7 @@
 import { Suspense } from "react"
 
 import { listRegions } from "@lib/data"
+import Image from 'next/image'
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
@@ -19,12 +20,18 @@ export default async function Nav() {
           </div>
 
           <div className="flex items-center h-full">
+            <Image 
+              src="https://wingaesthetic.s3.us-east-1.amazonaws.com/wingaesthetics-logo.png"
+              alt="logo"
+              height={60}
+              width={60}
+            />
             <LocalizedClientLink
               href="/"
               className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
               data-testid="nav-store-link"
             >
-              Wing Aesthetics Store
+               Store
             </LocalizedClientLink>
           </div>
 
