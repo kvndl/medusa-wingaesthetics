@@ -1,23 +1,13 @@
 import { Heading } from "@medusajs/ui"
-import LocalizedClientLink from "@modules/common/components/localized-client-link"
+// import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import React from "react"
 
 const Help = () => {
   return (
     <div className="mt-6">
-      <Heading className="text-base-semi">Need help?</Heading>
-      <div className="text-base-regular my-2">
-        <ul className="gap-y-2 flex flex-col">
-          <li>
-            <LocalizedClientLink href="https://wingaesthetics.com/contact-us">Contact</LocalizedClientLink>
-          </li>
-          <li>
-            <LocalizedClientLink href="https://wingaesthetics.com/contact-us">
-              Returns & Exchanges
-            </LocalizedClientLink>
-          </li>
-        </ul>
-      </div>
+      <a href="https://wingaesthetics.com/contact-us">
+        <Heading className="text-base-semi">Need help? Contact Us</Heading>
+      </a>
     </div>
   )
 }
